@@ -37,12 +37,12 @@
             android:name=".PersonTrackedContainerActivity"
             android:label="@string/title_activity_person_tracked_container"
             android:parentActivityName=".NavigationDrawerActivity"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".AlarmsActivity"
             android:label="@string/title_activity_person_tracked_container"
             android:parentActivityName=".PersonTrackedContainerActivity"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -51,7 +51,12 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA5y-7SPiGUMUtnzrftsCCEGMnSbveBcy4" />
 
-        <activity android:name=".SleepRecordsActivity"></activity>
+        <activity
+            android:name=".SleepRecordsActivity"
+            android:parentActivityName=".PersonTrackedContainerActivity" />
+        <activity android:name=".HeartRateRecordsActivity" />
+        <activity android:name=".StepRecordsActivity" />
+        <activity android:name=".WeightRecordsActivity"></activity>
     </application>
 
 </manifest>

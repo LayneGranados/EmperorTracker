@@ -17,9 +17,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfileFragment extends Fragment {
 
-    private Person person;
-
-
     public ProfileFragment() {
     }
 
@@ -35,7 +32,7 @@ public class ProfileFragment extends Fragment {
         TextView heigth = (TextView)view.findViewById(R.id.textView_heigth_person_tracked_profile_information);
         TextView weigth = (TextView)view.findViewById(R.id.textView_weigth_person_tracked_profile_information);
         TextView hashCode = (TextView)view.findViewById(R.id.textView_link_hask_code_person_tracked_profile_information);
-
+        Person person = ((MyApplication)getActivity().getApplication()).getPersonSelected();
         name.setText(person.getNombre());
         age.setText(String.valueOf(person.getEdad()));
         birdthday.setText(person.getFechaNacimiento());
@@ -46,11 +43,4 @@ public class ProfileFragment extends Fragment {
         return view;
     }
 
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
 }

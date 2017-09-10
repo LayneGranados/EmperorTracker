@@ -70,10 +70,6 @@ public class ListTrackersFragment extends Fragment {
 
         LinearLayout linearLayoutListPeopleTracked = (LinearLayout)view.findViewById(R.id.linearLayout_fragment_list_people_tracked);
         LinearLayout linearLayoutNoPeopleTracked = (LinearLayout)view.findViewById(R.id.linearLayout_fragment_no_people_tracked);
-
-        //ArrayList<Person> people = buildPeople();
-        //person.setTracked(people);
-
         if(person != null ){
             if(person.getTracked().isEmpty()) {
                 linearLayoutListPeopleTracked.setVisibility(view.GONE);
@@ -92,7 +88,6 @@ public class ListTrackersFragment extends Fragment {
                 peopleTrackedRecyclerView.setAdapter(pleopleTrackedAdapterRecyclerView);
             }
         }
-        System.out.println("People: "+person.getTracked().size());
         return view;
     }
 

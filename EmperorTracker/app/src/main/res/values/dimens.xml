@@ -59,4 +59,13 @@
     <dimen name="hour_textSize">48sp</dimen>
 
     <dimen name="textsize_log_out">16sp</dimen>
+    <dimen name="height_cardview_sleep_records">70dp</dimen>
+    <dimen name="height_cardview_weight_expanded_records">175dp</dimen>
+    <dimen name="numbers_cardview_sleep_records">16sp</dimen>
+    <dimen name="description_cardview_sleep_records">12sp</dimen>
+    <dimen name="divider_item_date_weight">70dp</dimen>
+    <dimen name="margin_top_texts_item_weight">30dp</dimen>
+    <dimen name="margin_top_layout_photos_item_weight">70dp</dimen>
+    <dimen name="size_images_item_weight">90dp</dimen>
+    <dimen name="margin_left_images_item_weight">10dp</dimen>
 </resources>

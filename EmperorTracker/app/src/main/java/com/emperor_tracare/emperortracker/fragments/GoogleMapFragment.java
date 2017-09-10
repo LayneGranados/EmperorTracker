@@ -22,7 +22,6 @@ import java.util.ArrayList;
 
 public class GoogleMapFragment extends Fragment implements OnMapReadyCallback {
 
-    private Person person;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,7 +36,6 @@ public class GoogleMapFragment extends Fragment implements OnMapReadyCallback {
         super.onViewCreated(view, savedInstanceState);
         FragmentManager fragment = getActivity().getFragmentManager();
         final MapFragment mf = (MapFragment) fragment.findFragmentById(R.id.map);
-        System.out.println("ENTROOOOOOOOOOOOO");
         mf.getMapAsync(this);
     }
 
@@ -48,13 +46,6 @@ public class GoogleMapFragment extends Fragment implements OnMapReadyCallback {
         googleMap.addMarker(new MarkerOptions().title("Hello Google Maps!").position(marker));
     }
 
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
 }
 
 

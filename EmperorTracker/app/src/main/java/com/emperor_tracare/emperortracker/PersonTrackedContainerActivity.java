@@ -32,8 +32,11 @@ public class PersonTrackedContainerActivity extends AppCompatActivity {
         Intent myIntent = getIntent(); // gets the previously created intent
         String fragment = myIntent.getStringExtra("fragment");
         final String username = myIntent.getStringExtra("username");
-        ArrayList<Person> people = ((MyApplication)getApplication()).getPeople();
-        final Person person = MyApplication.findPersonByUsername(people, username);
+        if(username != null && !username.isEmpty()) {
+            ArrayList<Person> people = ((MyApplication)getApplication()).getPeople();
+            final Person person = MyApplication.findPersonByUsername(people, username);
+            ((MyApplication)getApplication()).setPersonSelected(person);
+        }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
             getWindow().setStatusBarColor(Color.TRANSPARENT);
@@ -44,32 +47,27 @@ public class PersonTrackedContainerActivity extends AppCompatActivity {
         bottomBar.setDefaultTab(R.id.tabs_profile);
         bottomBar.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
 
-
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
                 switch (tabId){
                     case R.id.tabs_profile:
                         ProfileFragment profileFragment = new ProfileFragment();
-                        profileFragment.setPerson(person);
                         changeToFragment(profileFragment, R.id.container_person_tracked_detail);
                         getSupportActionBar().setTitle("Person Tracked");
                         break;
                     case R.id.tabs_health:
                         HealthFragment healthFragment = new HealthFragment();
-                        healthFragment.setPerson(person);
                         changeToFragment(healthFragment, R.id.container_person_tracked_detail);
                         getSupportActionBar().setTitle("Person Tracked");
                         break;
                     case R.id.tabs_alarms:
                         AlarmsFragment alarmsFragment = new AlarmsFragment();
-                        alarmsFragment.setPerson(person);
                         changeToFragment(alarmsFragment, R.id.container_person_tracked_detail);
                         getSupportActionBar().setTitle("Person Tracked");
                         break;
                     case R.id.tabs_map:
                         GoogleMapFragment googleMapFragment = new GoogleMapFragment();
-                        googleMapFragment.setPerson(person);
                         changeToFragment(googleMapFragment, R.id.container_person_tracked_detail);
                         getSupportActionBar().setTitle("Person Tracked");
                         break;

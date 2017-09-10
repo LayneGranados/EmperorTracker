@@ -9,6 +9,8 @@ public class MyApplication extends Application {
     private ArrayList<Alarm> alarms = new ArrayList<>();
     private ArrayList<Person> people = new ArrayList<>();
     private Person personSigned;
+    private Person personSelected;
+    private String fragment;
 
     public ArrayList<Alarm> getAlarms() {
         return alarms;
@@ -48,5 +50,13 @@ public class MyApplication extends Application {
 
     public void setPersonSigned(Person personSigned) {
         this.personSigned = personSigned;
+    }
+
+    public Person getPersonSelected() {
+        return personSelected;
+    }
+
+    public void setPersonSelected(Person personSelected) {
+        this.personSelected = personSelected;
     }
 }

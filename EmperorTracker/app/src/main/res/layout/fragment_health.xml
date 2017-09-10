@@ -19,15 +19,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.7"
-                android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
+                android:layout_gravity="left|center_vertical"
+                android:orientation="horizontal">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -59,20 +57,21 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:orientation="horizontal">
+                android:layout_gravity="right|center_vertical"
+                android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/button_check_weight_records"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right|center_vertical"
                     android:background="@drawable/roundedbuttonrecords"
                     android:paddingBottom="2sp"
                     android:paddingLeft="10sp"
                     android:paddingRight="10sp"
                     android:paddingTop="2sp"
+                    android:layout_gravity="right"
                     android:text="@string/check_records"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/button_popup"
@@ -92,14 +91,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
+            android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.7"
-                android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
+                android:layout_gravity="left|center_vertical"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -130,15 +129,16 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:orientation="horizontal">
+                android:layout_gravity="right|center_vertical"
+                android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/button_check_footsteps_records"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right|center_vertical"
+                    android:layout_gravity="right"
                     android:background="@drawable/roundedbuttonrecords"
                     android:paddingBottom="2sp"
                     android:paddingLeft="10sp"
@@ -171,14 +171,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
+            android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.7"
-                android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
+                android:layout_gravity="left|center_vertical"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -224,12 +224,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:orientation="horizontal">
+                android:layout_gravity="right|center_vertical"
+                android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/button_check_bpm_records"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
@@ -258,14 +259,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
+            android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.7"
-                android:orientation="horizontal"
-                android:layout_gravity="center_vertical">
+                android:layout_gravity="left|center_vertical"
+                android:orientation="horizontal">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -297,12 +296,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:orientation="horizontal">
+                android:layout_gravity="right|center_vertical"
+                android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/button_check_sleep_records"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"

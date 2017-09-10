@@ -34,7 +34,6 @@ public class AlarmsFragment extends Fragment {
     PopupWindow popupWindow;
     View popupView;
     int mCurrentX,mCurrentY;
-    private Person person;
 
     private ArrayList<Alarm> alarms;
 
@@ -89,11 +88,4 @@ public class AlarmsFragment extends Fragment {
         return view;
     }
 
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
 }
