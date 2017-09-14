@@ -54,9 +54,18 @@
         <activity
             android:name=".SleepRecordsActivity"
             android:parentActivityName=".PersonTrackedContainerActivity" />
-        <activity android:name=".HeartRateRecordsActivity" />
-        <activity android:name=".StepRecordsActivity" />
-        <activity android:name=".WeightRecordsActivity"></activity>
+        <activity
+            android:name=".HeartRateRecordsActivity"
+            android:parentActivityName=".PersonTrackedContainerActivity" />
+        <activity
+            android:name=".StepRecordsActivity"
+            android:parentActivityName=".PersonTrackedContainerActivity" />
+        <activity
+            android:name=".WeightRecordsActivity"
+            android:parentActivityName=".PersonTrackedContainerActivity" />
+        <activity
+            android:name=".FisicalActivitiesActivity"
+            android:parentActivityName=".PersonTrackedContainerActivity"/>
     </application>
 
 </manifest>

@@ -41,7 +41,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:text="@string/text_weight"
-                        android:textSize="@dimen/button_textSize"
+                        android:textSize="@dimen/textview_text_size_username_profile"
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical"/>
                     <TextView
@@ -49,7 +49,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorSecondaryText"
                         android:text="69 kg"
-                        android:textSize="@dimen/button_textSize"
+                        android:textSize="@dimen/textview_text_size_health_information_profile"
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5sp"/>
@@ -67,14 +67,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/roundedbuttonrecords"
-                    android:paddingBottom="2sp"
-                    android:paddingLeft="10sp"
-                    android:paddingRight="10sp"
-                    android:paddingTop="2sp"
+                    android:paddingBottom="@dimen/padding_top_bottom_health_fragment"
+                    android:paddingLeft="@dimen/padding_left_right_health_fragment"
+                    android:paddingRight="@dimen/padding_left_right_health_fragment"
+                    android:paddingTop="@dimen/padding_top_bottom_health_fragment"
                     android:layout_gravity="right"
                     android:text="@string/check_records"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/button_popup"
+                    android:textSize="@dimen/button_text_size_health_information_profile"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -113,7 +113,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:text="@string/text_footsteps"
-                        android:textSize="@dimen/button_textSize"
+                        android:textSize="@dimen/textview_text_size_username_profile"
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical"/>
                     <TextView
@@ -121,7 +121,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorSecondaryText"
                         android:text="8.783 steps"
-                        android:textSize="@dimen/button_textSize"
+                        android:textSize="@dimen/textview_text_size_health_information_profile"
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5sp"/>
@@ -140,13 +140,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:background="@drawable/roundedbuttonrecords"
-                    android:paddingBottom="2sp"
-                    android:paddingLeft="10sp"
-                    android:paddingRight="10sp"
-                    android:paddingTop="2sp"
+                    android:paddingBottom="@dimen/padding_top_bottom_health_fragment"
+                    android:paddingLeft="@dimen/padding_left_right_health_fragment"
+                    android:paddingRight="@dimen/padding_left_right_health_fragment"
+                    android:paddingTop="@dimen/padding_top_bottom_health_fragment"
                     android:text="@string/check_records"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/button_popup"
+                    android:textSize="@dimen/button_text_size_health_information_profile"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -199,7 +199,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@color/colorPrimary"
                             android:text="83"
-                            android:textSize="@dimen/button_textSize"
+                            android:textSize="@dimen/textview_text_size_username_profile"
                             android:textStyle="bold"
                             android:layout_gravity="center_vertical"/>
                         <TextView
@@ -207,17 +207,17 @@
                             android:layout_height="wrap_content"
                             android:textColor="@color/colorSecondaryText"
                             android:text="bpm"
-                            android:textSize="@dimen/button_textSize"
+                            android:textSize="@dimen/textview_text_size_health_information_profile"
                             android:textStyle="bold"
                             android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="5sp"/>
+                            android:layout_marginLeft="0dp"/>
                     </LinearLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorSecondaryText"
                         android:text="@string/disclaimer_bpm"
-                        android:textSize="@dimen/button_popup"
+                        android:textSize="@dimen/textview_text_size_health_information_profile"
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical" />
                 </LinearLayout>
@@ -235,13 +235,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
                     android:background="@drawable/roundedbuttonrecords"
-                    android:paddingBottom="2sp"
-                    android:paddingLeft="10sp"
-                    android:paddingRight="10sp"
-                    android:paddingTop="2sp"
+                    android:paddingBottom="@dimen/padding_top_bottom_health_fragment"
+                    android:paddingLeft="@dimen/padding_left_right_health_fragment"
+                    android:paddingRight="@dimen/padding_left_right_health_fragment"
+                    android:paddingTop="@dimen/padding_top_bottom_health_fragment"
                     android:text="@string/check_records"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/button_popup"
+                    android:textSize="@dimen/button_text_size_health_information_profile"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -280,7 +280,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimary"
                         android:text="7 hr 47 mins"
-                        android:textSize="@dimen/button_textSize"
+                        android:textSize="@dimen/textview_text_size_username_profile"
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical"/>
 
@@ -289,7 +289,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorSecondaryText"
                         android:text="@string/disclaimer_sleep"
-                        android:textSize="@dimen/button_popup"
+                        android:textSize="@dimen/textview_text_size_health_information_profile"
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical" />
                 </LinearLayout>
@@ -307,13 +307,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
                     android:background="@drawable/roundedbuttonrecords"
-                    android:paddingBottom="2sp"
-                    android:paddingLeft="10sp"
-                    android:paddingRight="10sp"
-                    android:paddingTop="2sp"
+                    android:paddingBottom="@dimen/padding_top_bottom_health_fragment"
+                    android:paddingLeft="@dimen/padding_left_right_health_fragment"
+                    android:paddingRight="@dimen/padding_left_right_health_fragment"
+                    android:paddingTop="@dimen/padding_top_bottom_health_fragment"
                     android:text="@string/check_records"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/button_popup"
+                    android:textSize="@dimen/button_text_size_health_information_profile"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -322,7 +322,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/sign_up_button"
+            android:id="@+id/button_check_fisical_activities"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -336,7 +336,6 @@
             android:paddingLeft="@dimen/button_padding_right_left"
             android:paddingRight="@dimen/button_padding_right_left"
             android:background = "@drawable/roundedbutton"/>
-
 
     </LinearLayout>
 

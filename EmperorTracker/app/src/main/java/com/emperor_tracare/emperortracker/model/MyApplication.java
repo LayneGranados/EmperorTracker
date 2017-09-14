@@ -59,4 +59,12 @@ public class MyApplication extends Application {
     public void setPersonSelected(Person personSelected) {
         this.personSelected = personSelected;
     }
+
+    public String getFragment() {
+        return fragment;
+    }
+
+    public void setFragment(String fragment) {
+        this.fragment = fragment;
+    }
 }

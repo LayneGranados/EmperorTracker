@@ -17,14 +17,14 @@
         android:orientation="vertical"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="@dimen/margin_top_linear_no_alarms"
         android:layout_gravity="center_vertical">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/imageview_size_penguin_no_eggs"
+            android:layout_height="@dimen/imageview_size_penguin_no_eggs"
             android:src="@drawable/penguin2"
-            android:layout_gravity="center_vertical"/>
+            android:layout_gravity="center_vertical|center_horizontal"/>
 
         <TextView
             android:layout_width="wrap_content"

@@ -1,5 +1,6 @@
 package com.emperor_tracare.emperortracker.adapter;
 
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,9 +43,13 @@ public class WeightRecordAdapterRecyclerView extends RecyclerView.Adapter<Weight
                if(holder.collapsible.getVisibility()==View.VISIBLE) {
                    holder.collapse.setImageResource(R.drawable.ic_expand_more_black);
                    holder.collapsible.setVisibility(View.GONE);
+                   //holder.cardView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, R.dimen.height_cardview_weight_expanded_records));
+                   //holder.cardView.setMinimumHeight(70);
                } else if(holder.collapsible.getVisibility()==View.GONE) {
                    holder.collapse.setImageResource(R.drawable.ic_expand_less_black);
                    holder.collapsible.setVisibility(View.VISIBLE);
+                   //holder.cardView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, R.dimen.height_cardview_weight_collapsed_records));
+                   //holder.cardView.setMinimumHeight(70);
                }
             }
         });
@@ -62,6 +67,7 @@ public class WeightRecordAdapterRecyclerView extends RecyclerView.Adapter<Weight
         private TextView value;
         private LinearLayout collapsible;
         private ImageView collapse;
+        private CardView cardView;
 
 
         public WeightRecordsViewHolder(View itemView) {
@@ -72,6 +78,7 @@ public class WeightRecordAdapterRecyclerView extends RecyclerView.Adapter<Weight
             value = (TextView)itemView.findViewById(R.id.textView_value_weight_record);
             collapsible = (LinearLayout)itemView.findViewById(R.id.linear_layout_collapsible_weight_item);
             collapse = (ImageView)itemView.findViewById(R.id.imageview_collapse_expand_item_weight);
+            cardView = (CardView)itemView.findViewById(R.id.carview_item_list_weight_record);
         }
     }
 }

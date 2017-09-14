@@ -24,8 +24,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profile_image_edit_account"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="@dimen/circle_image_profile_width_heigth"
+                android:layout_height="@dimen/circle_image_profile_width_heigth"
                 android:src="@drawable/profile"
                 app:civ_border_color="#FF000000"
                 app:civ_border_width="2dp" />

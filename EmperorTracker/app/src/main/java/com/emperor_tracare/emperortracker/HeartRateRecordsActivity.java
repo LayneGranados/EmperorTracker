@@ -12,6 +12,7 @@ import android.transition.Fade;
 
 import com.emperor_tracare.emperortracker.adapter.HeartRateRecordAdapterRecyclerView;
 import com.emperor_tracare.emperortracker.model.HeartRateRecord;
+import com.emperor_tracare.emperortracker.model.MyApplication;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
@@ -29,6 +30,7 @@ public class HeartRateRecordsActivity extends AppCompatActivity {
             getWindow().setStatusBarColor(Color.TRANSPARENT);
             getWindow().setEnterTransition(new Fade());
         }
+        ((MyApplication)this.getApplication()).setFragment("heart");
 
         GraphView graph = (GraphView) findViewById(R.id.graph);
         LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[]{

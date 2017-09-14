@@ -10,12 +10,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.emperor_tracare.emperortracker.AlarmsActivity;
+import com.emperor_tracare.emperortracker.FisicalActivitiesActivity;
 import com.emperor_tracare.emperortracker.HeartRateRecordsActivity;
 import com.emperor_tracare.emperortracker.R;
 import com.emperor_tracare.emperortracker.SleepRecordsActivity;
 import com.emperor_tracare.emperortracker.StepRecordsActivity;
+import com.emperor_tracare.emperortracker.WeightRecordsActivity;
 import com.emperor_tracare.emperortracker.model.MyApplication;
 import com.emperor_tracare.emperortracker.model.Person;
+import com.emperor_tracare.emperortracker.model.WeightRecord;
 
 import java.util.ArrayList;
 
@@ -32,6 +35,8 @@ public class HealthFragment extends Fragment {
         Button checkBPMRecords = (Button)view.findViewById(R.id.button_check_bpm_records);
         Button checkFootstepsRecords = (Button)view.findViewById(R.id.button_check_footsteps_records);
         Button checkWeightRecords = (Button)view.findViewById(R.id.button_check_weight_records);
+        Button checkFisicalActivities = (Button)view.findViewById(R.id.button_check_fisical_activities);
+
 
         checkSleepRecords.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +62,14 @@ public class HealthFragment extends Fragment {
         checkWeightRecords.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(), StepRecordsActivity.class);
+                Intent intent = new Intent(getContext(), WeightRecordsActivity.class);
+                startActivity(intent);
+            }
+        });
+        checkFisicalActivities.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), FisicalActivitiesActivity.class);
                 startActivity(intent);
             }
         });

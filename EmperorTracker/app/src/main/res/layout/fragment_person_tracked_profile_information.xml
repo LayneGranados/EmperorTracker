@@ -25,8 +25,8 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/image_person_tracked_profile_information"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/circle_image_profile_information"
+                    android:layout_height="@dimen/circle_image_profile_information"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:src="@drawable/profile"
                     app:civ_border_color="#FF000000"
@@ -45,13 +45,14 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimary"
                     android:text="Layne Granados"
-                    android:textSize="@dimen/button_textSize"
+                    android:textSize="@dimen/textview_text_size_username_profile"
                     android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_top_profile_information_text">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -66,7 +67,7 @@
                         android:textColor="@color/colorSecondaryText"
                         android:text="79 years"
                         android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/button_popup"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
                         android:textStyle="bold" />
 
                     <ImageView
@@ -74,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/ic_action_calendar_day_black"
-                        android:layout_marginLeft="10dp"/>
+                        android:layout_marginLeft="@dimen/margin_left_icons_profile_information"/>
 
                     <TextView
                         android:id="@+id/textView_birthday_person_tracked_profile_information"
@@ -83,7 +84,7 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/colorSecondaryText"
                         android:text="June 20 1967"
-                        android:textSize="@dimen/button_popup"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -91,7 +92,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_top_profile_information_text">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -106,7 +108,7 @@
                         android:textColor="@color/colorSecondaryText"
                         android:text="1.75mt"
                         android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/button_popup"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
                         android:textStyle="bold" />
 
                     <ImageView
@@ -114,7 +116,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/ic_fitness_center_black"
-                        android:layout_marginLeft="10dp"/>
+                        android:layout_marginLeft="@dimen/margin_left_icons_profile_information"/>
 
                     <TextView
                         android:id="@+id/textView_weigth_person_tracked_profile_information"
@@ -123,7 +125,7 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/colorSecondaryText"
                         android:text="69 kgs"
-                        android:textSize="@dimen/button_popup"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -131,16 +133,17 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_top_profile_information_text">
 
                     <TextView
                         android:id="@+id/textView_label_link_hask_code_person_tracked_profile_information"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorSecondaryText"
-                        android:text="Hash code to link"
+                        android:text="Hash code to link:"
                         android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/button_popup"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
                         android:textStyle="bold" />
 
                     <TextView
@@ -150,7 +153,7 @@
                         android:textColor="@color/colorSecondaryText"
                         android:text="302312"
                         android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/button_popup"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
                         android:layout_marginLeft="5dp"/>
                 </LinearLayout>
 

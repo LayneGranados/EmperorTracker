@@ -13,6 +13,8 @@ import android.view.View;
 
 import com.emperor_tracare.emperortracker.adapter.AlarmsAdapterRecyclerView;
 import com.emperor_tracare.emperortracker.adapter.SleepRecordAdapterRecyclerView;
+import com.emperor_tracare.emperortracker.model.MyApplication;
+import com.emperor_tracare.emperortracker.model.SleepRecord;
 import com.emperor_tracare.emperortracker.model.SleepRecord;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
@@ -31,6 +33,7 @@ public class SleepRecordsActivity extends AppCompatActivity {
             getWindow().setStatusBarColor(Color.TRANSPARENT);
             getWindow().setEnterTransition(new Fade());
         }
+        ((MyApplication)this.getApplication()).setFragment("sleep");
 
         GraphView graph = (GraphView) findViewById(R.id.graph);
         LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {

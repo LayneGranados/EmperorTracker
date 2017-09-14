@@ -16,7 +16,6 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.borax12.materialdaterangepicker.date.DatePickerDialog;
 import com.emperor_tracare.emperortracker.fragments.AccountFragment;
 import com.emperor_tracare.emperortracker.fragments.ListTrackersFragment;
 import com.emperor_tracare.emperortracker.model.MyApplication;
@@ -27,7 +26,7 @@ import java.util.Calendar;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class NavigationDrawerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DatePickerDialog.OnDateSetListener {
+public class NavigationDrawerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout mDrawer;
     private String username;
@@ -101,46 +100,21 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        //ServiceListFragment serviceListFragment = new ServiceListFragment();
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_por_revisar) {
-            //serviceListFragment.setFilter(1);
-            //changeToFragment(serviceListFragment, R.id.content_navigation_drawer);
             return true;
         } else if (id == R.id.action_no_iniciado) {
-            //serviceListFragment.setFilter(2);
-            //changeToFragment(serviceListFragment, R.id.content_navigation_drawer);
             return true;
         } else if (id == R.id.action_en_curso) {
-            //serviceListFragment.setFilter(3);
-            //changeToFragment(serviceListFragment, R.id.content_navigation_drawer);
             return true;
         } else if (id == R.id.action_finalizado) {
-            //serviceListFragment.setFilter(4);
-            //changeToFragment(serviceListFragment, R.id.content_navigation_drawer);
             return true;
         } else if (id == R.id.action_rechazado) {
-            //serviceListFragment.setFilter(5);
-            //changeToFragment(serviceListFragment, R.id.content_navigation_drawer);
             return true;
         } else if (id == R.id.action_finalizado_no_mision) {
-            //serviceListFragment.setFilter(6);
-            //changeToFragment(serviceListFragment, R.id.content_navigation_drawer);
             return true;
         } else if (id == R.id.action_rango_fechas) {
-            Calendar now = Calendar.getInstance();
-            DatePickerDialog dpd = com.borax12.materialdaterangepicker.date.DatePickerDialog.newInstance(
-                    NavigationDrawerActivity.this,
-                    now.get(Calendar.YEAR),
-                    now.get(Calendar.MONTH),
-                    now.get(Calendar.DAY_OF_MONTH)
-            );
-            dpd.setAutoHighlight(false);
-            dpd.show(getFragmentManager(), "Datepickerdialog");
             return true;
         } else if (id == R.id.action_todos) {
-            //serviceListFragment.setFilter(8);
-            //changeToFragment(serviceListFragment, R.id.content_navigation_drawer);
             return true;
         }
 
@@ -166,12 +140,6 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                 .addToBackStack(null).commit();
 
-    }
-
-    @Override
-    public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth, int yearEnd, int monthOfYearEnd, int dayOfMonthEnd) {
-        String date = "You picked the following date: From- "+dayOfMonth+"/"+(++monthOfYear)+"/"+year+" To "+dayOfMonthEnd+"/"+(++monthOfYearEnd)+"/"+yearEnd;
-        System.out.println("Fecha Seleccionada: "+date);
     }
 
     @Override

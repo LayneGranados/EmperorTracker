@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.transition.Fade;
 
 import com.emperor_tracare.emperortracker.adapter.StepRecordAdapterRecyclerView;
+import com.emperor_tracare.emperortracker.model.MyApplication;
 import com.emperor_tracare.emperortracker.model.StepRecord;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
@@ -29,6 +30,7 @@ public class StepRecordsActivity extends AppCompatActivity {
             getWindow().setStatusBarColor(Color.TRANSPARENT);
             getWindow().setEnterTransition(new Fade());
         }
+        ((MyApplication)this.getApplication()).setFragment("step");
 
         GraphView graph = (GraphView) findViewById(R.id.graph);
         LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {

@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="5dp">
+        android:layout_margin="@dimen/margin_fragment_devices">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,7 +29,7 @@
                     android:textColor="@color/colorSecondaryText"
                     android:text="Activate Panic State"
                     android:layout_gravity="center_vertical"
-                    android:textSize="@dimen/button_textSize"
+                    android:textSize="@dimen/textview_text_size_personal_information_profile"
                     android:textStyle="bold" />
 
                 <Switch
@@ -37,9 +37,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:textOn="@string/on"
+                    android:layout_marginLeft="10dp"
                     android:textOff="@string/off"
-                    android:showText="true"
-                    android:textSize="@dimen/textView_secondary_textSize"/>
+                    android:showText="false"
+                    android:textSize="@dimen/textview_text_size_personal_information_profile"/>
 
             </LinearLayout>
 

@@ -75,8 +75,24 @@ public class PersonTrackedContainerActivity extends AppCompatActivity {
             }
         });
 
+        String fragmentExp = ((MyApplication)this.getApplication()).getFragment();
         if("alarms".equalsIgnoreCase(fragment)) {
             changeToFragment(new AlarmsFragment(), R.id.container_person_tracked_detail);
+            getSupportActionBar().setTitle("Person Tracked");
+        } else if("heart".equals(fragmentExp)) {
+            changeToFragment(new HealthFragment(), R.id.container_person_tracked_detail);
+            getSupportActionBar().setTitle("Person Tracked");
+        } else if("sleep".equals(fragmentExp)) {
+            changeToFragment(new HealthFragment(), R.id.container_person_tracked_detail);
+            getSupportActionBar().setTitle("Person Tracked");
+        } else if("step".equals(fragmentExp)) {
+            changeToFragment(new HealthFragment(), R.id.container_person_tracked_detail);
+            getSupportActionBar().setTitle("Person Tracked");
+        } else if("weight".equals(fragmentExp)) {
+            changeToFragment(new HealthFragment(), R.id.container_person_tracked_detail);
+            getSupportActionBar().setTitle("Person Tracked");
+        } else if("fisical".equals(fragmentExp)) {
+            changeToFragment(new HealthFragment(), R.id.container_person_tracked_detail);
             getSupportActionBar().setTitle("Person Tracked");
         }
     }

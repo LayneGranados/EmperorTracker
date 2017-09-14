@@ -8,15 +8,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="5dp">
+        android:layout_margin="@dimen/margin_fragment_devices">
 
         <TextView
             android:id="@+id/textView_username_person_tracked_profile_information"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimary"
-            android:text="Devices"
-            android:textSize="@dimen/button_textSize"
+            android:text="@string/devices"
+            android:textSize="@dimen/textview_text_size_username_profile"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -29,7 +29,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:weightSum="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_top_profile_information_text">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -50,7 +51,7 @@
                         android:textColor="@color/colorSecondaryText"
                         android:text="SmarthPhone"
                         android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/textView_secondary_textSize"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -68,19 +69,18 @@
                         android:textColor="@color/colorSecondaryText"
                         android:text="30%"
                         android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/textView_secondary_textSize"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
                         android:textStyle="bold"
                         />
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
+                        android:layout_gravity="right|center_vertical"
                         android:src="@drawable/ic_battery_30_black" />
 
                 </LinearLayout>
 
             </LinearLayout>
-
 
         </LinearLayout>
 
@@ -94,7 +94,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:weightSum="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_top_profile_information_text">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -115,7 +116,7 @@
                         android:textColor="@color/colorSecondaryText"
                         android:text="SmarthWatch"
                         android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/textView_secondary_textSize"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -132,13 +133,13 @@
                         android:textColor="@color/colorSecondaryText"
                         android:text="90%"
                         android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/textView_secondary_textSize"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
                         android:textStyle="bold"
                         />
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
+                        android:layout_gravity="right|center_vertical"
                         android:src="@drawable/ic_battery_90_black" />
 
                 </LinearLayout>
